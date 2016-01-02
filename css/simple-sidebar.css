@@ -1,0 +1,201 @@
+/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Toggle Styles */
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    margin-top: -20px;
+    overflow-y: auto;
+    background: #000;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+/* Ícones internos ao sidebar */
+.sidebar-nav li a i{
+    font-size: none;
+    margin-left: -20px;
+}
+
+/* Texto junto aos ícones do sidebar */
+#textoListaSidebar{
+    padding-left: 10px;
+}
+
+/* Hover do botão pra abrir a sidebar na navbar */
+#botaoSidebar:hover{
+    background-color: black;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+
+    /* Comportamento Texto e Botao Left-Side Navbar */
+
+    .navbar-brand #textoMP{
+        margin-left: -45px;
+    }
+
+    .navbar-brand #textomp{
+        font-size: 0;
+    }
+
+    #botaoSidebar{
+        margin-left: 58px;
+    }
+
+    #controleLeftContentNavbar.toggled #textoMP {
+        font-size: 0;
+    }
+
+    #controleLeftContentNavbar.toggled #textomp {
+        font-size: 20px;
+        margin-left: -40px;
+    }
+
+    #controleLeftContentNavbar.toggled #botaoSidebar {
+        margin-left: -40px;
+    }
+
+    /* Icones Menu Usuário */
+
+    .icon-user:before {
+        content: "\e900";
+        margin-right: 10px;
+    }
+
+    .icon-user-tie:before {
+        content: "\e900";
+        margin-right: 10px;
+    }
+
+    .icon-pencil:before {
+        content: "\e901";
+        margin-right: 10px;
+    }
+
+    .icon-exit:before {
+        content: "\e906";
+        margin-right: 10px;
+    }
+
+    .icon-cog:before {
+        content: "\e906";
+        margin-right: 10px;
+    }
+
+    .icon-bubbles2:before {
+        content: "\e903";
+        margin-right: 10px;
+    }
+}
